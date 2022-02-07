@@ -90,7 +90,7 @@ public class GameScreen implements Screen {
 
 		batch.setProjectionMatrix(cam.combined);
 		batch.begin();
-			game.txtFont.draw(batch, "Drops coletados: "+dropsCount, 40, 480);
+			game.txtFont.draw(batch, "Drops coletados: "+dropsCount, 40, 460);
 			batch.draw(bucketImg, bucket.x, bucket.y, bucket.width, bucket.height);
 			for (Rectangle drop : drops)
 				batch.draw(dropImg, drop.x, drop.y);
